@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="./_app/immutable/assets/0.x6Y4SAA5.css" rel="stylesheet">
+    <link href="./_app/immutable/assets/2.B1CjDBao.css" rel="stylesheet">
+    <title>Weather</title>
+    <!-- HEAD_svelte-1s420dh_START -->
+    <meta property="og:title" content="Weather">
+    <meta property="og:description" content="A modern weather search made in Svelte + tailwind, utilizing the OpenWeather api.">
+    <meta property="og:image" content="https://files.catbox.moe/4uk5s9.png">
+    <meta name="theme-color" content="#000000">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- HEAD_svelte-1s420dh_END -->
+</head>
+
+<body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+        <div class="dark">
+            <div class="flex flex-col sm:flex-row min-h-screen w-full items-center justify-center space-y-5 sm:space-y-0 sm:space-x-5 bg-gray-100 dark:bg-[#070707] transition-colors duration-200 p-4">
+                <h1 class="sm:hidden bg-gradient-to-t from-[#404040] via-[#ffffff] to-[#ffffff] inline-block text-transparent bg-clip-text text-center font-bold font-title text-2xl sm:text-6xl pl-5 pr-5" data-svelte-h="svelte-1vzozur">Weather on mobile is in beta.</h1>
+                <div class="w-full max-w-[450px] sm:w-[450px] h-auto sm:h-[325px] border border-gray-300 dark:border-[#252525] rounded-3xl bg-white dark:bg-[#111111] flex flex-col items-center justify-between py-6 transition-colors duration-200">
+                    <div class="text-center">
+                        <h1 class="text-gray-800 dark:text-[#ffffff] text-[17.5px] font-sans mt-4" data-svelte-h="svelte-1yr1k18">Select your city and country to view the weather</h1>
+                        <h1 class="text-gray-600 dark:text-[#999999] text-[15px] font-sans mt-2 px-8" data-svelte-h="svelte-9zi2we">Your request will be sent to OpenWeather to receive the current weather
+                        </h1>
+                    </div>
+                    <form class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 pb-5 px-4 sm:px-0 w-full sm:w-auto"><input type="text" placeholder="Abu Dhabi" class="flex font-sans px-4 py-2 w-full sm:w-[200px] bg-gray-50 dark:bg-[#070707] border border-gray-300 dark:border-[#252525] rounded-md focus:outline-none placeholder-gray-500 dark:placeholder-[#a2a2a2] text-gray-900 dark:text-white transition-colors duration-200"
+                            value=""> <select id="country" name="country" class="flex font-sans px-2 py-3 w-full sm:w-auto bg-gray-50 dark:bg-[#070707] border border-gray-300 dark:border-[#252525] rounded-md focus:outline-none text-gray-900 dark:text-white transition-colors duration-200"><option value="AE">AE</option><option value="AG">AG</option><option value="AR">AR</option><option value="AL">AL</option><option value="AS">AS</option><option value="AT">AT</option><option value="AU">AU</option><option value="BB">BB</option><option value="BE">BE</option><option value="BG">BG</option><option value="BO">BO</option><option value="BR">BR</option><option value="BS">BS</option><option value="BY">BY</option><option value="BZ">BZ</option><option value="CA">CA</option><option value="CH">CH</option><option value="CL">CL</option><option value="CN">CN</option><option value="CO">CO</option><option value="CR">CR</option><option value="CY">CY</option><option value="CZ">CZ</option><option value="DE">DE</option><option value="DK">DK</option><option value="DM">DM</option><option value="DO">DO</option><option value="DZ">DZ</option><option value="EC">EC</option><option value="EE">EE</option><option value="EG">EG</option><option value="ES">ES</option><option value="ET">ET</option><option value="FI">FI</option><option value="FJ">FJ</option><option value="FM">FM</option><option value="FR">FR</option><option value="GB">GB</option><option value="GD">GD</option><option value="GH">GH</option><option value="GR">GR</option><option value="GU">GU</option><option value="HN">HN</option><option value="HR">HR</option><option value="HT">HT</option><option value="HU">HU</option><option value="ID">ID</option><option value="IE">IE</option><option value="IL">IL</option><option value="IN">IN</option><option value="IS">IS</option><option value="IT">IT</option><option value="JM">JM</option><option value="JP">JP</option><option value="KE">KE</option><option value="KI">KI</option><option value="KR">KR</option><option value="KY">KY</option><option value="KZ">KZ</option><option value="LC">LC</option><option value="LT">LT</option><option value="LU">LU</option><option value="LV">LV</option><option value="MA">MA</option><option value="MD">MD</option><option value="MH">MH</option><option value="MP">MP</option><option value="MT">MT</option><option value="MX">MX</option><option value="MY">MY</option><option value="NG">NG</option><option value="NI">NI</option><option value="NL">NL</option><option value="NO">NO</option><option value="NR">NR</option><option value="NU">NU</option><option value="NZ">NZ</option><option value="PA">PA</option><option value="PE">PE</option><option value="PG">PG</option><option value="PH">PH</option><option value="PL">PL</option><option value="PN">PN</option><option value="PR">PR</option><option value="PT">PT</option><option value="PW">PW</option><option value="PY">PY</option><option value="RO">RO</option><option value="RU">RU</option><option value="SA">SA</option><option value="SB">SB</option><option value="SE">SE</option><option value="SG">SG</option><option value="SI">SI</option><option value="SK">SK</option><option value="SV">SV</option><option value="TH">TH</option><option value="TK">TK</option><option value="TO">TO</option><option value="TT">TT</option><option value="TV">TV</option><option value="TZ">TZ</option><option value="UA">UA</option><option value="UG">UG</option><option value="US">US</option><option value="VC">VC</option><option value="VE">VE</option><option value="VN">VN</option><option value="VU">VU</option><option value="WS">WS</option><option value="ZA">ZA</option></select>                        <button type="submit" class="px-4 py-2 w-full sm:w-auto font-sans bg-blue-500 dark:bg-white text-white dark:text-black rounded-md hover:bg-blue-600 dark:hover:bg-[#c4c4c4] transition-colors duration-200" data-svelte-h="svelte-1tearbe">Search</button></form>
+                </div>
+                <button class="fixed top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-[#252525] text-gray-800 dark:text-white transition-colors duration-200"></button></div>
+        </div>
+
+        <script>
+            {
+                __sveltekit_r4dx83 = {
+                    base: new URL(".", location).pathname.slice(0, -1)
+                };
+
+                const element = document.currentScript.parentElement;
+
+                const data = [null, null];
+
+                Promise.all([
+                    import ("./_app/immutable/entry/start.DhVm0DjF.js"),
+                    import ("./_app/immutable/entry/app.DnwrL4nJ.js")
+                ]).then(([kit, app]) => {
+                    kit.start(app, element, {
+                        node_ids: [0, 2],
+                        data,
+                        form: null,
+                        error: null
+                    });
+                });
+            }
+        </script>
+    </div>
+</body>
+
+</html>

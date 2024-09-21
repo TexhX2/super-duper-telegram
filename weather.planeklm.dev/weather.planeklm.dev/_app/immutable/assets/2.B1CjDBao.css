@@ -1,0 +1,13 @@
+html {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+}
+
+html:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(7 7 7 / var(--tw-bg-opacity))
+}
+
+.dark {
+    color-scheme: dark
+}
